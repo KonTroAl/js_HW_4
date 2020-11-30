@@ -2,7 +2,7 @@
 // В прошлом домашнем задании вы реализовали корзину на базе массивов. Какими объектами можно заменить их элементы?
 // Реализуйте такие объекты.
 // Перенести функционал подсчета корзины на объектно-ориентированную базу.
-
+"use strict"
 
 let basket = {
     fist: { name: 'PS', cost: 47000, num: 3 },
@@ -11,7 +11,7 @@ let basket = {
     countBasketPrice() {
         let a = 0;
         let res = 0;
-        is_num = true;
+        let is_num = true;
         for (let i in basket) {
             a = (basket[i]["cost"] * basket[i]["num"]);
             if (isNaN(a)) {
